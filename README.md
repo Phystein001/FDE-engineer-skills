@@ -44,6 +44,7 @@ cp -R skills/<skill-name> ~/.cursor/skills/
 | Skill | 作用 | 使用方法 |
 |------|------|----------|
 | `bmad-prd` | 创建 / 更新 / 校验 PRD（主入口，推荐使用） | 说「写 PRD」「改 PRD」「校验 PRD」 |
+| `prd-to-prototype` | **PRD to Prototype**：从想法零提问直出 PRD，再生成移动端/PC 端高保真 HTML 原型 | 说「我想做一个…」「帮我设计…」，或 `$prd-to-prototype`；PRD 生成后回复「确认移动端」/「确认PC端」 |
 | `bmad-ux` | UX 设计模式与交互规格 | 说「做 UX 设计」或「写 UX 规格」 |
 | `bmad-agent-pm` | 召唤产品经理人格（John） | 说「找 PM」或「找 John」 |
 | `bmad-agent-ux-designer` | 召唤 UX 设计师人格（Sally） | 说「找 UX」或「找 Sally」 |
@@ -101,7 +102,6 @@ cp -R skills/<skill-name> ~/.cursor/skills/
 |------|------|
 | `mobile-ui-prototype` | 按截图还原可交互移动端 HTML |
 | `prd-generator` | 专业级 PRD 生成（用例、数据字典、交互与 UI 规范） |
-| `prd-to-prototype` | 从需求到高保真原型 |
 | `image-to-editable-ppt` | 图片 / 截图转可编辑 PPT |
 | `codex-ppt` | 文章 / 报告生成统一风格 PPT |
 | `business-writing` | 商业写作与研报 |
@@ -128,6 +128,17 @@ bmad-help
 ```
 
 不确定从哪开始时，先调用：`$bmad-help`
+
+**快速出原型链路（适合 FDE 早期验证）：**
+
+```text
+prd-to-prototype
+  → 直出 PRD（docs/prd.md）
+  → 确认移动端 / PC 端
+  → 生成可交互 HTML 原型（prototype/）
+```
+
+来源：[ClawHub — PRD to Prototype](https://clawhub.ai/zengxming45/prd-to-prototype)（v1.0.0）
 
 ---
 
